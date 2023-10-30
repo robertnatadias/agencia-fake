@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um site de Exemplo do Curso de Css Do Dimitri Teixeira">
+    <meta name="keywords" content="Agencia Digital, Css, Html">
+    <title>Agencia Fake</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Agencia Fake</h1>
+        </div>
+        <span onclick="abrirMenu()" class="material-symbols-outlined">
+            menu
+            </span>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Serviços</a>
+            <a href="#" id="botao">Fale Conosco</a>
+        </div>
+
+       <div id="itens">
+           <ul class="menu-celular">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Fale Conosco</a></li>
+           </ul>
+       </div>
+    </nav>
+    <header class="header">
+        <div class="headline">
+            <h2 id="letra-espacada">Voce achou a melhor</h2>
+            <h2 id="titulo">Agência Digital</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi quis magni praesentium ratione corporis consequatur nesciunt cumque maiores, asperiores quo sit natus necessitatibus dolorum? Modi facilis odio temporibus est.</p>
+            <a class="contact-btn" href="#">Contrate Agora</a>
+        </div>
+
+        <div class="img-headline">
+            <img src="img/hero_right.png" alt="img">
+        </div>
+    </header>
+
+    <section>
+        <h2>O que podemos fazer pelo seu negócio?</h2>
+        <div class="servicos">
+                <div class="card">
+                    <div class="card-text">
+                        <img src="img/pc.png" alt="pc">
+                        <h3>Desenvolvimento de Sites</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, amet labore deserunt vero porro incidunt ut alias vel, magni asperiores obcaecati voluptatum repellendus! Doloremque veritatis, vel voluptatum velit nam corrupti!</p>
+                    </div>
+                    <div class="texto-oculto">
+                        <h3>Texto Oculto</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, amet labore deserunt vero porro incidunt ut alias vel, magni asperiores obcaecati voluptatum repellendus! Doloremque veritatis, vel voluptatum velit nam corrupti!</p>
+                        
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-text">
+                    <img src="img/smartphone.png" alt="app">
+                    <h3>Desenvolvimento de Apps</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, amet labore deserunt vero porro incidunt ut alias vel, magni asperiores obcaecati voluptatum repellendus! Doloremque veritatis, vel voluptatum velit nam corrupti!</p>
+                </div>
+                <div class="texto-oculto">
+                    <h3>Texto Oculto</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, amet labore deserunt vero porro incidunt ut alias vel, magni asperiores obcaecati voluptatum repellendus! Doloremque veritatis, vel voluptatum velit nam corrupti!</p>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-text">
+                    <img src="img/marketing.png" alt="marketing '">
+                    <h3>Marketing Digital</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, amet labore deserunt vero porro incidunt ut alias vel, magni asperiores obcaecati voluptatum repellendus! Doloremque veritatis, vel voluptatum velit nam corrupti!</p>
+                </div>
+
+                <div class="texto-oculto">
+                    <h3>Texto Oculto</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, amet labore deserunt vero porro incidunt ut alias vel, magni asperiores obcaecati voluptatum repellendus! Doloremque veritatis, vel voluptatum velit nam corrupti!</p>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo-rodape">
+            <h2 class="agencia">Agência Fake</h2>
+            <p>Um site feito com HTML e CSS puro.</p>
+            
+        </div>
+
+        <strong class="direitos">
+            © Todos os direitos reservados
+        </strong>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send?phone=5543998591090&text=Ol%C3%A1,%20peguei%20sue%20contato%20do%20WhatsApp." target="_blank" class="whats"><img src="img/whats.png" alt="whats" ></a>
+
+    <script>
+        function abrirMenu(){
+            if(itens.style.display == 'none'){
+                itens.style.display = 'flex'
+            }
+            else{
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
